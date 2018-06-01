@@ -1,0 +1,216 @@
+* Définition des objectifs et description du corpus
+
+Étude de  /l'évolution de certaines formes interpellatives dans un texte arabe (le Coran) selon un découpage chronologique (les deux grandes périodes de sa révélation/ (mecquoise et médinoise)).
+
+
+** Présentation et Constitution du corpus
+
+Notre corpus est constitué du texte coranique.
+
+*NB* : le choix du corpus, ainsi que le travail qui va suivre n'ont aucun but religieux. Notre texte nous intéresse avant tout pour sa valeur littéraire.
+
+*** Pourquoi ce corpus ?
+
+Pour au moins deux raisons :
+- c'est un corpus large mais assez restreint pour être étudiés.
+- c'est un corpus connu avec des études depuis des siècles.
+
+*** Description du corpus
+
+Le corpus est composé de :
+- 114 chapitres de longueur très variables (de 3 à 286 versets).
+- Ces chapitres sont réparties en deux parties, correspondant aux 22 ans de sa révélation : mecquoise (610-622), médinoise (622-632).
+
+- Environ 85 000 mots graphiques.
+
+- 349 formules interpellatives commençant par *\arbt{يا}* qui est l'outil du vocatif en arabe.
+
+
+*** Choix de normalisation
+
+- Nous avons enlevé tous les signes de vocalisation. Pour une étude plus poussée, peut-être seraient-ils importants, mais dans notre cas, ils nous ajoutent des contraintes non-justifiées.
+
+- Les formules interpellatives sont toujours formées d'au moins deux mots graphiques. Or les calculs de spécificités ne se font que sur un mot graphique, donc nous avons remplacer des formules par des lettre selon le schéma suivant :
+
+
+| Formule arabe              | remplacé par : | Trad formule             | Nombre |
+|----------------------------+----------------+--------------------------+--------|
+| \arbt{يا أيّها النّاس}       | A              | Ô vous les hummains      |      8 |
+| \arbt{يا أيّها الّذين آمنوا} | B              | Ô vous qui croyez        |     89 |
+| \arbt{يا أيّها النّبيّ}       | C              | Ô Toi le Prophète        |     13 |
+| \arbt{يا أيّها} + x         | D              | Ô                        |     17 |
+| \arbt{يا أهل الكتاب}       | E              | Ô vous les gens du livre |     12 |
+| \arbt{يا}                  | non-remplacée  | Ô                        |    189 |
+|----------------------------+----------------+--------------------------+--------|
+
+** Hypothèse principale
+
+Nous pensons que la formule /(Ô vous les humains - *A*)/ devrait être caractéristique de la 1ere période, car étant au début de la révélation, il n'y pas de communauté, là où l'on devrait voir plus de /(Ô vous qui croyez - *B*)/ à partir de la seconde période (médinoise).
+
+** Choix des outils
+
+Nous avons hésité et testé deux logiciels (iramuteq et TXM).
+
+*** Iramuteq
+
+- Avantage : prise en charge utf8, capacité d'importer de txm.
+- Inconvénient : format d'entrée non pratique. Le problème peut être résolu grâce à un script, cependant il aurait fallu une longue procédure à chaque changement
+
+
+*** TXM
+
+- Avantage : prise en charge utf8, mais surtout la capacité à utiliser un fichier csv pour les informations sur le corpus.
+- Inconvénient : impossibilité de changer la police, et présentation des résultats de gauche à droite, ce qui n'est pas commode pour de l'arabe.
+
+*** Arbitrage
+
+Notre choix s'est porté sur TXM, pour l'avantage que nous avons énoncé.
+
+* Résultats
+
+** Spécificités et hypothèses de départ
+
+Voici le premier tableau des spécificités, classées selon l'ordre alphabétique, ce qui nous permet de nous occuper de nos lettres (A - E)
+
+[[./img/specificites_total_1.png]]
+#+CAPTION: Spécifités par ordre alphabétique.
+[[./img/specificites_total_2.png]]
+
+
+*** Discussions et interpretation
+
+**** Cas de A (Ô vous les humains)
+
+Notre hypothèse est invalidee, avec quasiment le même nombre d'occurence dans les deux parties (9 vs 10)
+
+_Lecture possible_ : même ds la deuxieme partie de sa révélation, le texte coranique, qui a une vocation universelle continue de s'intéresser aux humains en général, croyants ou pas.
+
+**** Cas de B (Ô vous les croyants)
+
+Notre hypothès est validée. Sur les 89 occurences dans le corpus, les 89 (100%) se trouve dans la deuxième partie.
+
+_Lecture possible_ : dans cette seconde partie, nous avons une communaute naissante, ce qui justifie la mention des croyants.
+
+*** Ouverture
+
+Après nous être penchés sur nos deux hypothèses de base, nous avons voulu aller plus loin dans l'exploration du vocabulaire de ces deux parties.
+
+** Champ lexicaux et spécificités
+
+Pour cela, nous allons nous intéresser à la spécifités selon son étude naturelle qui est celle du score.
+
+Nous regarderons les 35 termes les spécifiques à chaque partie, tout en proposant notre explication sur les phénomènes qui nous semblent les plus intérressants.
+
+
+*** Vocabulaire mecquois
+
+#+CAPTION: Spécificités de la période mecquoise 1
+#+ATTR_LATEX: :placement [H]
+[[./img/spec_mecque_1.png]]
+
+#+CAPTION: Spécificités de la période mecquoise 2
+#+ATTR_LATEX: :placement [H]
+[[./img/spec_mecque_2.png]]
+
+#+CAPTION: Spécificités de la période mecquoise 3
+#+ATTR_LATEX: :placement [H]
+[[./img/spec_mecque_3.png]]
+
+
+*** Vocabulaire médinois
+
+#+CAPTION: Spécificités de la période médinoise 1
+#+ATTR_LATEX: :placement [H]
+[[./img/spec_medine_1.png]]
+
+#+CAPTION: Spécificités de la période médinoise 2
+#+ATTR_LATEX: :placement [H]
+[[./img/spec_medine_2.png]]
+
+#+CAPTION: Spécificités de la période médinoise 3
+#+ATTR_LATEX: :placement [H]
+[[./img/spec_medine_3.png]]
+
+*** Analyses
+
+On remarque entre autre :
+
+- Un vocabulaire du récit privilégié dans la partie mecquoise.
+
+Nous disons cela à cause de la présence de (\arbt{قال} - Il dit) présent 424 fois dans cette période soit 84.6% des occurences totales (501).
+
+- Un discours eschatologique accentué dans la partie mecquoise.
+
+On voit que les termes (\arbt{اليوم} et \arbt{يومئذ}) faisant référence à la fin des temps et le jugement dernier apparaissent à 81% (228/282) dans la partie mecquoise.
+
+- Une variation de personne
+
+La période mecquoise est caractérisé par plusieurs termes renvoyant à la première personne (singulier ou pluriel) comme (\arbt{كنّا} - nous sommes), (\arbt{إني}, \arbt{أنا}, \arbt{نحن} - pronoms personnels).
+
+Par contre, dans la période médinoise, les termes renvoient à la deuxième ou troisième personne. Notons juste les verbes à l'impératif (\arbt{اعلموا}- sachez, \arbt{اتقوا} - ayez crainte/foi).
+
+Pouvons-nous y voir un déplacement de sujet. Si la révélation commence par présenter Dieu qui parle à la première personne, l'accent est ensuite mis sur la communauté, les gens donc le non-je.
+
+- L'évolution de l'appellation de la même entité (Dieu).
+
+Dans la partie mecquoise, nous avons la présence du mot (\arbt{ربّ} - Seigneur) accompagné de pronoms personnels (Ton, mon, votre ...) 359 fois soit 83 % des occurences (432).
+
+Puis le terme semble évolué. De (Seigneur - \arbt{ربّ}) on glisse vers le mot (\arbt{الله}). On voit que 63% (1682/2644) des occurrences ont lieu dans la partie médinoise.
+
+Si le premier est plus intime, affectueux comme appelation, on passe dans le second cas a un terme neutre voire institionel.
+
+- Un vocabulaire montrant une communauté et ses différents interlocuteurs dans la période médinoise.
+
+On voit apparaitre comme spécifique à la période médinoise plusieurs termes nous indiquant la présence d'une communauté :
+
+D'une part le (message - \arbt{رسول}) et les (croyants - \arbt{مؤمن(ون)}) ainsi que le verbe (croire - \arbt{آمن}). De l'autre, des verbes relatifs à la négation (\arbt{كفر} - nier) ou encore (accuser de mensonge - \arbt{كذّب}). Mais aussi des particules telles que (\arbt{منكم} - de vous), (\arbt{عليكم} - sur vous).
+
+* Points positifs, limites et ouvertures
+
+À l'issue de ce travail, le principal à garder est à notre avis que les outils dont nous disposons en TAL peuvent servir à traiter de l'arabe. Il est certes vrai que l'analyse n'est pas encore au même niveau que pour les corpus en caractères latins (surtout au niveau de l'étiquettage morphosyntaxique), cependant en ce qui concerne la textométrie de base, les outils font le travail.
+
+Quant aux limites de notre travail :
+
+- Nous sommes conscients qu'il puisse y avoir un biais dans la réception. Au fil des siècles, les mots changent de significations, ce qui fait que nous pouvons voir un réseau de sens qui n'était pas forcément celui du public de base. Mais cela mènerait à un débat plus philosophique que technique autour de ce que H. R. Jauss appelle l'esthétique de la réception.
+
+- Dans le même sillage, la question des limites de l'interprétation se pose. Une autre personne, devant les mêmes donnés aurait probablement eu des conclusions/observations différents.
+
+- Enfin, nous n'avons analysé qu'une infime échantillon (environ 80 mots graphiques sur 15 000 soit 0.5%). Continuer aurait renforcé/infirmé nos observations. Mais le principal n'était pas là pour ce travail ci.
+
+
+
+
+* =====================================================================         :noexport:
+* ++ options ++                                                                 :prelim:
+** Infos
+#+AUTHOR: Ousseynou Gueye
+#+EMAIL: <myname>@...com
+#+TITLE: *Rapport de stage L3 \\ Laboratoire ERTIM*
+
+#+OPTIONS:   author:t timestamp:t email:nil
+#+LANGUAGE: en
+
+** Tags
+#+TAGS:  prelim(p) noexport(n)
+#+EXCLUDE_TAGS: noexport prelim
+
+** Latex
+*** compiler
+#+latex_compiler: lualatex
+*** class
+#+LATEX_CLASS: myreport
+#+LATEX_CLASS_OPTIONS: [a4paper,11pt]
+*** margins
+#+LATEX_HEADER: \usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+*** others
+#+OPTIONS: tex:t          Do the right thing automatically (MathJax)
+#+OPTIONS: LaTeX:nil
+
+** Meta-info
+#+DESCRIPTION: A description of how I currently use org-mode
+#+CREATOR: HK
+
+** Others
+#+OPTIONS:   H:3 num:t toc:3
+#+OPTIONS: skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+OPTIONS: \n:t ^:nil # to export underscore as underscore
